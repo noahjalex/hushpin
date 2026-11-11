@@ -1,0 +1,23 @@
+{
+  "name": "pi-hushpin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pi extension: query an attached live or final Hushpin recording transcript",
+  "type": "module",
+  "keywords": ["pi-package"],
+  "pi": {
+    "extensions": ["./index.ts"]
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5.9"
+  }
+}
